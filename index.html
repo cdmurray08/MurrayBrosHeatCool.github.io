@@ -288,41 +288,21 @@
 <head>
 <style>
   .header{
-  	background:LightSkyBlue;
   	grid-column: 1/6;
-    grid-row: 1/4;
+    grid-row: 1/6;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    min-height: 184px;
-
+    grid-template-rows: 5fr 1fr;
   }
 
-  .body{
-  	background:LightSalmon;
-  	grid-column: 1/6;
-    grid-row: 4/9;
-    min-height: 600px;
-  }
-
-  .footer{
-  	background:PaleTurquoise;
-  	grid-column: 1/6;
-    grid-row: 9/11;
-    min-height: 300px;
-  }
-
-  .header_1{
+  .header_title{
   	background: blue;
-    grid-row: 1/5;
+
   }
 
   .header_menu{
   	background: green;
-   	grid-row: 5/6;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     display: grid;
-    font-size: 12px;
-    min-height: 0px;
   }
 
   .space{background: gray;}
@@ -331,27 +311,46 @@
   .menu_3{background: white;}
   .menu_4{background: red;}
 
+  .body{
+  	background:LightSalmon;
+  	grid-column: 1/6;
+    grid-row: 6/25;
+
+  }
+
+  .footer{
+  	background:PaleTurquoise;
+  	grid-column: 1/6;
+    grid-row: 25/31;
+
+  }
+
   .container {
     font-size: 40px;
     width: 100%;
-    height: 100%;
+    height: 1500px;
     background: LightGray;
     display: grid;
- 	grid-template-columns: repeat(5, 1fr);
-  	grid-template-rows: repeat(10, 1fr);
+ 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(30,1fr)
+
+  }
+
+  .menu-text{
+  	font-size: 12px;
   }
 
 </style>
 
 <div class="container">
   <div class="header">
-  	<div class="header_1">Header</div>
+  	<div class="header_title">Murray Brothers Heating Cooling</div>
     <div class="header_menu">
     	<div class="space"></div>
-        <div class="menu_1">Services</div>
-        <div class="menu_2">Tips</div>
-       	<div class="menu_3">Schedule</div>
-       	<div class="menu_4">Products</div>
+        <center class="menu_1 menu-text">Services</center>
+        <center class="menu_2 menu-text">Tips</center>
+       	<center class="menu_3 menu-text">Schedule</center>
+       	<center class="menu_4 menu-text">Products</center>
        	<div class="space"></div>
     </div>
   </div>
