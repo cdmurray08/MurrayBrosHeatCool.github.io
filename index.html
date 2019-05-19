@@ -282,6 +282,7 @@
 
 -->
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -292,17 +293,22 @@
     grid-row: 1/4;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    min-height: 184px;
+
   }
+
   .body{
   	background:LightSalmon;
   	grid-column: 1/6;
-    grid-row: 4/8;
+    grid-row: 4/9;
+    min-height: 600px;
   }
 
   .footer{
   	background:PaleTurquoise;
   	grid-column: 1/6;
-    grid-row: 8/10;
+    grid-row: 9/11;
+    min-height: 300px;
   }
 
   .header_1{
@@ -314,9 +320,9 @@
   	background: green;
    	grid-row: 5/6;
     grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    grid-template-row: 1fr;
     display: grid;
     font-size: 12px;
+    min-height: 0px;
   }
 
   .space{background: gray;}
@@ -331,9 +337,10 @@
     height: 100%;
     background: LightGray;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ 	grid-template-columns: repeat(5, 1fr);
+  	grid-template-rows: repeat(10, 1fr);
   }
+
 </style>
 
 <div class="container">
