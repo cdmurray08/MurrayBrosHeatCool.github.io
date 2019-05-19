@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
 
@@ -8,36 +9,42 @@
 
       <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+
       <style>
 
-      h1{
-        color: white;
-        background-color: #252EE3;
-        text-align: left;
-        font-family: 'Bangers', monospace;
-        font-size: 50px;
-        margin-right: 1000px;
-        margin-left: 50px;
-        margin-bottom: 0px;
-        margin-top: 50px;
-      }
+        .header{background-color: LightSkyBlue}
 
-      h2{
-        color: white;
-        background-color: #252EE3;
-        text-align: justify;
-        font-family:  'Michroma', sans-serif;
-        font-size: 30px;
-        margin-right: 1000px;
-        margin-left: 50px;
-        margin-top: 0px;
-      }
+        .container{
 
-      p{
-        color: black;
-        font-size: 25px;
-        font-family: Arial;
-      }
+        }
+        h1{
+          color: white;
+          background-color: #252EE3;
+          text-align: left;
+          font-family: 'Bangers', monospace;
+          font-size: 50px;
+          margin-right: 1000px;
+          margin-left: 50px;
+          margin-bottom: 0px;
+          margin-top: 50px;
+        }
+
+        h2{
+          color: white;
+          background-color: #252EE3;
+          text-align: justify;
+          font-family:  'Michroma', sans-serif;
+          font-size: 30px;
+          margin-right: 1000px;
+          margin-left: 50px;
+          margin-top: 0px;
+        }
+
+        p{
+          color: black;
+          font-size: 25px;
+          font-family: Arial;
+        }
 
       </style>
 
@@ -271,4 +278,83 @@
 
 <footer id="footer">Copyright Murray Brothers Heating and Cooling</footer>
 
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .header{
+  	background:LightSkyBlue;
+  	grid-column: 1/6;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .body{
+  	background:LightSalmon;
+  	grid-column: 1/6;
+    grid-row: 4/8;
+  }
+
+  .footer{
+  	background:PaleTurquoise;
+  	grid-column: 1/6;
+    grid-row: 8/10;
+  }
+
+  .header_1{
+  	background: blue;
+    grid-row: 1/5;
+  }
+
+  .header_menu{
+  	background: green;
+   	grid-row: 5/6;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-row: 1fr;
+    display: grid;
+    font-size: 12px;
+  }
+
+  .space{background: gray;}
+  .menu_1{background: yellow;}
+  .menu_2{background: gray;}
+  .menu_3{background: white;}
+  .menu_4{background: red;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+</style>
+
+<div class="container">
+  <div class="header">
+  	<div class="header_1">Header</div>
+    <div class="header_menu">
+    	<div class="space"></div>
+        <div class="menu_1">Services</div>
+        <div class="menu_2">Tips</div>
+       	<div class="menu_3">Schedule</div>
+       	<div class="menu_4">Products</div>
+       	<div class="space"></div>
+    </div>
+  </div>
+  <div class="body">Body</div>
+  <div class="footer">Footer</div>
+</div>
+
+</head>
+<body>
+
+
+</body>
 </html>
