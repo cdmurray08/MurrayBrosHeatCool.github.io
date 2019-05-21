@@ -300,11 +300,19 @@
       grid-row: 1/6;
       display: grid;
       grid-template-rows: 5fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .header_left{
+      background: blue;
+    }
+
+    .header_right{
+      background: orange;
     }
 
     .header_title{
-    	background: blue;
-
+      grid-template-columns: 1fr 1fr;
     }
 
     .header_menu{
@@ -386,8 +394,11 @@
   <div class="container">
     <div class="header">
     	<div class="header_title">
-        <h1>Murray Brothers</h1>
-        <h2>Heating &CenterDot; Cooling</h2>
+        <div class="header_left">
+          <h1>Murray Brothers</h1>
+          <h2>Heating &CenterDot; Cooling</h2>
+        </div>
+        <div class="header_right"></div>
       </div>
       <div class="header_menu">
       	<div class="space"></div>
