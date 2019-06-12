@@ -1,9 +1,149 @@
-
-
 <!DOCTYPE html>
 <html>
+<head>
 
-<h1>hello world</h1>
+  <link rel="icon" type="image/gif" href="https://www.iconspng.com/images/fire-icon/fire-icon.jpg">
+  <title>Murray Bros</title>
 
 
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+
+  <style>
+    .header{
+    	grid-column: 1/6;
+      grid-row: 1/6;
+      display: grid;
+      grid-template-rows: 5fr 1fr;
+
+    }
+
+    .header_left{
+      background: blue;
+    }
+
+    .header_right{
+      background: orange;
+    }
+
+    .header_title{
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+      max-height: 201.383px;
+    }
+
+    .header_menu{
+    	background: green;
+      grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+      display: grid;
+      grid-gap: 10px;
+      align-items: center;
+    }
+
+    .space{background: gray;}
+    .menu_1{background: yellow;}
+    .menu_2{background: gray;}
+    .menu_3{background: white;}
+    .menu_4{background: red;}
+
+    .body{
+    	background:#ff6721;
+    	grid-column: 1/6;
+      grid-row: 6/25;
+    }
+
+    .footer{
+    	background:PaleTurquoise;
+    	grid-column: 1/6;
+      grid-row: 25/31;
+      display: grid;
+      grid-template-rows: 5fr 1fr;
+    }
+
+    .footer_body{
+    background:PaleTurquoise;
+    }
+
+    .footer_base{
+    background:white;
+    }
+
+    .container {
+      font-size: 40px;
+      width: 100%;
+      height: 1500px;
+      background: white;
+      display: grid;
+   	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(30,1fr);
+    	grid-gap: 10px;
+
+    }
+
+    .menu-text{
+    	font-size: 20px;
+      font_family: Arial;
+    }
+
+    h1{
+      text-align: left;
+      color: white;
+      font-family: 'Bangers', monospace;
+      font-size: 50px;
+      margin-right: 300px;
+      margin-left: 50px;
+      margin-bottom: 0px;
+      margin-top: 50px;
+    }
+
+    h2{
+      color: white;
+      text-align: justify;
+      font-family:  'Michroma', sans-serif;
+      font-size: 30px;
+      margin-right: 300px;
+      margin-left: 50px;
+      margin-top: 0px;
+    }
+
+    .logo_style{
+      justify-content: center;
+      height: 100px;
+}
+
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="header">
+    	<div class="header_title">
+        <div class="header_left">
+          <img src="logo.png" class="logo_style"/>
+          <!--<h1>Murray Brothers</h1>
+          <h2>Heating &CenterDot; Cooling</h2>-->
+        </div>
+        <div class="header_right"></div>
+      </div>
+      <div class="header_menu">
+      	<div class="space"></div>
+          <a class="menu_1 menu-text" href="aboutus.html">About Us</a>
+          <center class="menu_2 menu-text">Services</center>
+         	<center class="menu_3 menu-text">Products</center>
+         	<center class="menu_4 menu-text">Helpful Tips</center>
+         	<div class="space"></div>
+      </div>
+    </div>
+    <div class="body">Body</div>
+    <div class="footer">
+    	<div class="footer_body"></div>
+      <center class="footer_base menu-text">&copy Murray Brothers Heating and Cooling LLC 2018</center>
+    </div>
+  </div>
+
+  </head>
+  <body>
+
+
+  </body>
 </html>
