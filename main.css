@@ -130,6 +130,11 @@ body {
 	padding: 40px 0;
 }
 
+.social-media-image2 {
+	color: #ffffff;
+	font size: 48px;
+}
+
 /*--- media queries ---*/
 
 @media (max-width: 575.98px) {
