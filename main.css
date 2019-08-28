@@ -1,13 +1,13 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: #fbc472;
+	background: #ff922c;
 }
 
 /*--- navigation bar ---*/
 
 .navbar {
-	background: #72a9fc;
+	background: ##3045ff;
 }
 
 .nav-link,
@@ -172,7 +172,7 @@ body {
 	text-align: center;
 }
 .description h1 {
-	color: #6ab446;
+	color: #7d8898;
 }
 .description p {
 	color: #fff;
