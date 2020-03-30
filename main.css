@@ -30,6 +30,12 @@ body {
 
 /*--- header ---*/
 
+.img-circle {
+
+    border-radius: 50%;
+
+}
+
 .header {
 	background-image: url('images/header-background.jpg');
 	background-size: cover;
