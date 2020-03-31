@@ -10,12 +10,6 @@ body {
 	background: #3045ff;
 }
 
-#navbarCollapse{
-
-
-
-}
-
 .navbar-brand {
 	color: #fff;
 	cursor: pointer;
@@ -32,6 +26,7 @@ body {
 .navbar-collapse {
 	justify-content: flex-end;
 }
+
 
 /*--- header ---*/
 
